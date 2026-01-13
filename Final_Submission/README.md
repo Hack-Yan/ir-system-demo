@@ -1,17 +1,4 @@
-# IRIS Pro: 智能主题过滤检索系统
 
-### 📋 项目概览
-本项目为《信息检索》课程设计（Topic 2）。系统实现了从**用户查询意图识别**到**混合检索**的完整闭环。
-
-### 🚀 核心技术点
-* **意图分类**: 使用 **BERT (bert-base-uncased)** 对用户 Query 进行 20 类语义分类。
-* **混合检索**: 融合了基于 **Elasticsearch (BM25)** 的关键词检索与基于 **FAISS (all-MiniLM-L6-v2)** 的语义向量检索。
-* **重排序算法**: 使用 **RRF (Reciprocal Rank Fusion)** 算法对两种检索结果进行加权融合。
-
-### 📦 运行说明
-1.  **后端**: 核心算法实现在 `text_classification_retrieval_system.py` 中。
-2.  **前端**: 交互界面采用 React 开发，实时展示分类置信度与检索得分。
-3.  **部署**: 本仓库演示了前端交互逻辑，真实算法环境需依赖本地 Elasticsearch 集群。
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
