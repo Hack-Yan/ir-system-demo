@@ -1,54 +1,70 @@
-# IRIS Pro: 智能主题过滤与深度检索演示系统 🚀
-> **Topic 2: 基于 BERT 意图识别与 RRF 融合算法的混合检索系统实现**
+# Getting Started with Create React App
 
-本项目旨在解决大规模非结构化文本检索中的语义偏差问题。通过集成 **深度学习分类器** 与 **多模态检索引擎**，实现了从用户意图识别到精准内容定位的完整链路。
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## 🔗 在线演示
-- **前端实时交互地址**: 
-- **项目核心代码库**: 
+In the project directory, you can run:
 
----
+### `npm start`
 
-## 🛠️ 核心架构与技术栈
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-本系统采用“前轻后重”的架构设计，确保了检索的高性能与交互的流畅性：
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### 1. 意图分类引擎 (Classification Engine)
-* **模型**: 基于 `BERT-base-uncased` 预训练模型进行微调。
-* **功能**: 实时分析用户输入（Query），预测其所属的 20 Newsgroups 类别（如 `sci.space`, `comp.graphics`）。
-* **价值**: 过滤掉 90% 以上的无关噪音，为后续检索提供高准确度的“语义围栏”。
+### `npm test`
 
-### 2. 混合检索架构 (Hybrid Retrieval)
-系统不依赖单一检索手段，而是通过以下两种路径进行结果融合：
-* **关键词检索 (BM25)**: 确保术语匹配的硬核准确度。
-* **向量检索 (FAISS)**: 利用 `all-MiniLM-L6-v2` 编码器捕捉语义层面的关联。
-* **结果重排序**: 采用 **RRF (Reciprocal Rank Fusion)** 算法，科学计算两种检索方式的综合评分。
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 3. 前端交互界面 (Responsive UI)
-* **框架**: React + Tailwind CSS。
-* **亮点**: 磨砂玻璃质感设计、意图分类实时置信度展示、检索得分可视化。
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 📂 文件清单说明
-* `text_classification_retrieval_system.py`: 后端算法核心，包含 BERT 推理逻辑与混合检索管道。
-* `src/App.js`: 前端核心交互逻辑，模拟了后端 API 的调用反馈。
-* `api.py`: 基于 FastAPI 的接口层（用于本地部署）。
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## 📊 预期效果展示
-1.  **输入**: "GPU rendering performance"
-2.  **系统反馈**: 
-    * **意图预测**: `comp.graphics` (置信度: 98%)
-    * **检索逻辑**: 在 Graphics 专题库中优先进行混合检索。
-    * **结果**: 毫秒级返回高相关度的架构文档与技术方案。
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## 📝 课程实验总结
-通过本实验，我深入理解了信息检索（IR）领域中“意图感知”的重要性。单纯的关键词匹配已无法满足现代搜索需求，结合深度学习进行主题过滤（Topic Filtering）能显著提升检索精度（Precision）和召回率（Recall）。
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
----
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
