@@ -579,10 +579,10 @@ SOFTWARE.
 
 **晏远兆**
 - 学号：20233803050
-- 学校：[你的学校]
-- 专业：[你的专业]
-- 邮箱：[你的邮箱]
-- GitHub: [@yourusername](https://github.com/yourusername)
+- 学校：scnu
+- 专业：bmis
+- 邮箱：2209271139@qq.com
+
 
 ---
 
@@ -615,9 +615,8 @@ SOFTWARE.
 
 如有任何问题或建议，欢迎通过以下方式联系：
 
-- 📧 Email: [your.email@example.com]
-- 💬 Issues: [GitHub Issues](https://github.com/yourusername/text-classification-retrieval/issues)
-- 📱 WeChat: [your-wechat-id]
+
+- 📱 WeChat: 13712988828
 
 ---
 
